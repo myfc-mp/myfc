@@ -6,3 +6,6 @@
 .log-item {
   margin: 10rpx;
 }
+text {
+  color:red; 
+}
