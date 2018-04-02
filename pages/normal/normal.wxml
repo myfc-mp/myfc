@@ -1,0 +1,6 @@
+<!--本页是普通用户登陆页面-->
+<view class="normal-box">
+  <text class="normal-title">普通首页</text>
+  <image class="normal-logo" src="/image/maya.png"></image>
+  <text class="normal-newhouse">最新房源</text>  
+</view>

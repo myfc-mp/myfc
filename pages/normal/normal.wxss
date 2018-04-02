@@ -1,0 +1,23 @@
+/* pages/Normal/Normal.wxss */
+.normal-box{
+  height:1000rpx;
+  display:flex;   
+  flex-direction:column;
+  /* justify-content:space-between; */
+}
+
+.normal-logo{
+  width:750rpx; 
+  height:350rpx;
+  margin:500%rpx;   
+}
+
+.normal-title{
+  margin:160%rpx; 
+  color:red;
+  align-content:center;
+}
+
+.normal-newhouse{
+  color:blueviolet;
+}
