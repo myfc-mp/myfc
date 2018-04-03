@@ -1,6 +1,29 @@
 <!--本页是普通用户登陆页面-->
 <view class="normal-box">
   <text class="normal-title">普通首页</text>
-  <image class="normal-logo" src="/image/maya.png"></image>
-  <text class="normal-newhouse">最新房源</text>  
+  <image class="normal-logo" src="/image/new-maya.png"></image>
+  <text class="normal-newhouse">最新房源</text>
+  <view class="tpl-line-box">
+    <view class="tpl-img-box">
+      <image class="normal-sight" src="/image/sight.jpg"></image>
+    </view>
+    <view class="tpl-text-box">
+      <text>高新区依藤大院中央公院地铁口，128平大套三急售</text>
+      <view class="top">
+        <text>雅颂居</text>
+        <text>高新区</text>
+      </view>
+      <view class="middle">
+        <text>人车分流</text>
+        <text>精装全配</text>
+        <text>随时看房</text>
+      </view>
+      <view class="bottom">
+        <text>三室</text>
+        <text>128平方</text>
+        <text>240万</text>
+      </view>
+    </view>
+  </view>
+
 </view>
