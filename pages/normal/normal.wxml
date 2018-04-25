@@ -14,16 +14,16 @@
         <text>高新区</text>
       </view>
       <view class="middle">
-        <text>人车分流</text>
-        <text>精装全配</text>
-        <text>随时看房</text>
+        <text class="emphasis">人车分流</text>
+        <text class="emphasis">精装全配</text>
+        <text class="emphasis">随时看房</text>
       </view>
       <view class="bottom">
-        <text>三室</text>
-        <text>128平方</text>
-        <text>240万</text>
+        <text >三室</text>
+        <text >128平方</text>
+        <text class="rword">240万</text>
       </view>
-    </view>
+    </view> 
   </view>
 
 </view>

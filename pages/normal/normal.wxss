@@ -1,31 +1,25 @@
 /* pages/Normal/Normal.wxss */
 
 .normal-box {
-  height: 1000rpx;
+  height: 1000rpx; 
   display: flex;
-  flex-direction: column;
-  /* justify-content:space-between; */
+  flex-direction: column;   
+  /* background-color: #999;     */
 }
 
 .normal-logo {
   width: 750rpx;
-  height: 355rpx;
-  border-width: 0px;
-  border-color: #ffd11d;
-  padding-top: 0px;
+  height: 355rpx;  
 }
 
 .normal-title {
   color:black;
-  background-color: #ffd11d;  
-  padding-bottom: 0px;
+  background-color: #ffd11d;    
   text-align:center;
-  border-width:0px;
   font-size:14px; 
 }
 
 .normal-newhouse {
-  /* color: blueviolet; */
   text-align: left;  
   border-style:solid;
   border-color:darkgrey;
@@ -35,16 +29,19 @@
   padding-left:5px; 
 }
 
-.tpl-line-box{
-  display:flex;
-  color:black;
+.tpl-line-box{  
+  display:flex;        
+  /* background-color:yellow;   */
+  border-color:white;
+  border-bottom-color:#999;
+  border-style:solid;
+  border-width:1px;  
 }
 
 .tpl-img-box{
-  margin-top:36rpx;
+  margin-top:15rpx;
   margin-left:30rpx;
-  display:flex;
-  flex-wrap:wrap;
+  margin-bottom:5rpx;  
 }
 
 .normal-sight{
@@ -54,15 +51,54 @@
 
 
 .tpl-text-box{
-  font-size:28rpx;
-  margin-top:36rpx;
-  margin-left:16rpx;
+  font-size:25rpx;
+  margin-top:20rpx;
+  margin-left:16rpx; 
+  margin-bottom:20rpx;  
   display:flex;
-  flex-wrap:wrap;
-  color:black;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap;   
+  /* background-color: yellow; */
 }
 
 .top{
-  justify-content: space-around;
-  color:red;
+  /* background-color: green;   */
+  display:flex;
+  width:7em;
+  justify-content:space-between;
+  /* letter-spacing:2em;   */
+
 }
+
+.middle{
+  /* background-color:orange; */
+  width:350rpx;
+  font-size:20rpx;  
+  display:flex;
+  justify-content:space-between;  
+}
+
+.emphasis{
+  border-style:solid;
+  border-width:1px;
+  border-color:red;
+}
+
+.bottom{
+  /* background-color:orange; */
+  display:flex;
+  align-items:flex-end;
+  width:350rpx;
+  justify-content:space-between;  
+}
+
+.rword{
+  color:red;
+  font-size:30rpx;
+}
+
+
+
+
