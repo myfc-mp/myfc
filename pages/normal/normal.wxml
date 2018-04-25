@@ -3,25 +3,25 @@
   <text class="normal-title">普通首页</text>
   <image class="normal-logo" src="/image/new-maya.png"></image>
   <text class="normal-newhouse">最新房源</text>
-  <view class="tpl-line-box">
+  <view class="tpl-line-box" wx:for="{{proList}}">
     <view class="tpl-img-box">
-      <image class="normal-sight" src="/image/sight.jpg"></image>
+      <image class="normal-sight" src="{{item.img}}"></image>
     </view>
     <view class="tpl-text-box">
-      <text>高新区依藤大院中央公院地铁口，128平大套三急售</text>
+      <text>{{item.title}}</text>
       <view class="top">
-        <text>雅颂居</text>
-        <text>高新区</text>
+        <text>{{item.name}}</text>
+        <text>{{item.add}}</text>
       </view>
       <view class="middle">
-        <text class="emphasis">人车分流</text>
-        <text class="emphasis">精装全配</text>
-        <text class="emphasis">随时看房</text>
+        <text class="emphasis">{{item.attr1}}</text>
+        <text class="emphasis">{{item.attr2}}</text>
+        <text class="emphasis">{{item.attr3}}</text>
       </view>
       <view class="bottom">
-        <text >三室</text>
-        <text >128平方</text>
-        <text class="rword">240万</text>
+        <text >{{item.type}}</text>
+        <text >{{item.area}}</text>
+        <text class="rword">{{item.price}}</text>
       </view>
     </view> 
   </view>
