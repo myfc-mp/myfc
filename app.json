@@ -11,29 +11,31 @@
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
+    "selectedColor": "#FF9933",
+    "color":"#000000",
     "list": [{
       "pagePath": "pages/normal/normal",
       "text": "首页",
       "iconPath": "image/home.png",
-      "selectedIconPath": "image/redhome.png"
+      "selectedIconPath": "image/home.png"    
     },
     {
       "pagePath": "pages/logs/logs",
       "text": "租房",
       "iconPath": "image/rent.png",
-      "selectedIconPath": "image/onrent.png"
+      "selectedIconPath": "image/rent.png"
     },
     {
       "pagePath": "pages/index/index",
       "text": "买房",
       "iconPath": "image/buy.png",
-      "selectedIconPath": "image/onbuy.png"
+      "selectedIconPath": "image/buy.png"
     },
     {
       "pagePath": "pages/index/index",
       "text": "我",
       "iconPath": "image/me.png",
-      "selectedIconPath": "image/on-me.png"
+      "selectedIconPath": "image/me.png"
     }    
     ]
   }

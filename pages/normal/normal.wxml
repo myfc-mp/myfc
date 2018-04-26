@@ -3,7 +3,7 @@
   <text class="normal-title">普通首页</text>
   <image class="normal-logo" src="/image/new-maya.png"></image>
   <text class="normal-newhouse">最新房源</text>
-  <view class="tpl-line-box" wx:for="{{proList}}">
+  <view class="tpl-line-box" wx:for="{{proList}}" wx:key="title">
     <view class="tpl-img-box">
       <image class="normal-sight" src="{{item.img}}"></image>
     </view>

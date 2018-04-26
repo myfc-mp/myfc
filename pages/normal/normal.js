@@ -20,7 +20,7 @@ Page({
       },
       {
         title: '高新区天府三街，128平大套三急售',
-        img: '/image/sight.jpg',
+        img: '/image/sea.jpg',
         name: '雅颂居',
         add: '高新区',
         attr1: '人车分流',
