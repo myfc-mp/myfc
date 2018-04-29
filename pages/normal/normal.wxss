@@ -1,10 +1,10 @@
 /* pages/Normal/Normal.wxss */
 
 .normal-box {
-  height: 1000rpx; 
+  /* height: 1000rpx;  */
   display: flex;
   flex-direction: column;   
-  /* background-color: #999;     */
+  /* background-color: #999;      */
 }
 
 .normal-logo {
@@ -23,7 +23,7 @@
   text-align: left;  
   border-style:solid;
   border-color:darkgrey;
-  border-width:1px; 
+  border-width:2px; 
   font-size:14px;   
   color:black; 
   padding-left:5px; 
@@ -35,7 +35,7 @@
   border-color:white;
   border-bottom-color:#999;
   border-style:solid;
-  border-width:1px;  
+  border-width:2px;  
 }
 
 .tpl-img-box{

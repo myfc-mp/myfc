@@ -16,7 +16,7 @@ Page({
         attr3: '随时看房',
         type: '三室',
         area: '128平米',
-        price: '240万'
+        price: '1240万'
       },
       {
         title: '高新区天府三街，128平大套三急售',
@@ -28,7 +28,31 @@ Page({
         attr3: '随时看房',
         type: '三室',
         area: '128平米',
-        price: '240万'
+        price: '500万'
+      },
+      {
+        title: '高新区天府三街，128平大套三急售',
+        img: '/image/maple.jpg',
+        name: '雅颂居',
+        add: '高新区',
+        attr1: '人车分流',
+        attr2: '精装全配',
+        attr3: '随时看房',
+        type: '三室',
+        area: '128平米',
+        price: '1240万'
+      },
+      {
+        title: '高新区天府三街，128平大套三急售',
+        img: '/image/snow.jpg',
+        name: '雅颂居',
+        add: '高新区',
+        attr1: '人车分流',
+        attr2: '精装全配',
+        attr3: '随时看房',
+        type: '三室',
+        area: '128平米',
+        price: '400万'
       }
     ] 
   },

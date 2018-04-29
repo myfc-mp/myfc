@@ -10,6 +10,7 @@
 } 
  text {
   color:black;   
+  font-size:25rpx;
 }   
 
 
