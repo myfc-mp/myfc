@@ -8,7 +8,7 @@ Page({
     proList:[
       {
         title: '高新区依藤大院中央公院地铁口，128平大套三急售',
-        img: '/image/sight.jpg',
+        img: '/image/sight-web.png',
         name: '雅颂居',
         add: '高新区', 
         attr1: '人车分流',
@@ -20,7 +20,7 @@ Page({
       },
       {
         title: '高新区天府三街，128平大套三急售',
-        img: '/image/sea.jpg',
+        img: '/image/sea-web.png',
         name: '雅颂居',
         add: '高新区',
         attr1: '人车分流',
@@ -32,7 +32,7 @@ Page({
       },
       {
         title: '高新区天府三街，128平大套三急售',
-        img: '/image/maple.jpg',
+        img: '/image/maple-web.png',
         name: '雅颂居',
         add: '高新区',
         attr1: '人车分流',
@@ -44,7 +44,7 @@ Page({
       },
       {
         title: '高新区天府三街，128平大套三急售',
-        img: '/image/snow.jpg',
+        img: '/image/snow-web.png',
         name: '雅颂居',
         add: '高新区',
         attr1: '人车分流',

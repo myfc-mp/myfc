@@ -1,7 +1,7 @@
 <!--本页是普通用户登陆页面-->
 <view class="normal-box">
   <text class="normal-title">普通首页</text>
-  <image class="normal-logo" src="/image/new-maya.png"></image>
+  <image class="normal-logo" src="/image/new-maya-web.png"></image>
   <text class="normal-newhouse">最新房源</text>
   <scroll-view class="scroll-view_H" scroll-y style="width: 100%">
     <view class="tpl-line-box" wx:for="{{proList}}" wx:key="title">
