@@ -7,5 +7,5 @@
   margin: 10rpx;
 }
 text {
-  color:red; 
+  color:blueviolet; 
 }
