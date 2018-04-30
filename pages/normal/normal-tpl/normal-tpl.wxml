@@ -1,0 +1,23 @@
+<!-- 房屋信息显示行样式，可以在各页面通用； -->
+<template name="normal-item">
+  <view class="tpl-img-box">
+    <image class="normal-sight" src="{{item.img}}"></image>
+  </view>
+  <view class="tpl-text-box">
+    <text>{{item.title}}</text>
+    <view class="top">
+      <text>{{item.name}}</text>
+      <text>{{item.add}}</text>
+    </view>
+    <view class="middle">
+      <text class="emphasis">{{item.attr1}}</text>
+      <text class="emphasis">{{item.attr2}}</text>
+      <text class="emphasis">{{item.attr3}}</text>
+    </view>
+    <view class="bottom">
+      <text>{{item.type}}</text>
+      <text>{{item.area}}</text>
+      <text class="rword">{{item.price}}</text>
+    </view>
+  </view>
+</template>

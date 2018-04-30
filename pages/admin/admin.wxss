@@ -1,9 +1,9 @@
-/* pages/Normal/Normal.wxss */
+/* pages/admin/admin.wxss */
 
-@import "normal-tpl/normal-tpl.wxss"; 
+@import "../normal/normal-tpl/normal-tpl.wxss"; 
 
  /* 普通页面整体样式*/
-.normal-box {
+.admin-box {
   /* height: 1000rpx;  */
   display: flex;
   flex-direction: column;   
@@ -11,13 +11,13 @@
 }
 
 /* 页首图片样式 */
-.normal-logo {
+.admin-logo {
   width: 750rpx;
   height: 355rpx;  
 }
 
 /* 页首标题行样式 */
-.normal-title {
+.admin-title {
   color:black;
   background-color: #ffd11d;    
   text-align:center;
@@ -25,7 +25,7 @@
 }
 
 /* 最新房源行样式 */
-.normal-newhouse {
+.admin-newhouse {
   text-align: left;  
   border-style:solid;
   border-color:darkgrey;
@@ -34,8 +34,3 @@
   color:black; 
   padding-left:5px; 
 }
-
-
-
-
-
