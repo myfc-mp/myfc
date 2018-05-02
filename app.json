@@ -1,43 +1,44 @@
 {
-  "pages":[
-    "pages/admin/admin",  
-    "pages/normal/normal",
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"          
+    "pages/store/store",
+    "pages/resold/resold",
+    "pages/rent/rent"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffd109",
+    "navigationBarTitleText": "玛雅房屋",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "selectedColor": "#ff2b2b",
-    "color":"#000000",
-    "list": [{
-      "pagePath": "pages/normal/normal",
-      "text": "首页",
-      "iconPath": "image/home-web.png",
-      "selectedIconPath": "image/onhome-web.png"    
-    },
-    {
-      "pagePath": "pages/admin/admin",
-      "text": "租房",
-      "iconPath": "image/rent-web.png",
-      "selectedIconPath": "image/onrent-web.png"
-    },
-    {
-      "pagePath": "pages/index/index",
-      "text": "买房",
-      "iconPath": "image/buy-web.png",
-      "selectedIconPath": "image/onbuy-web.png"
-    },
-    {
-      "pagePath": "pages/index/index",
-      "text": "我",
-      "iconPath": "image/me-web.png",
-      "selectedIconPath": "image/onme-web.png"
-    }    
+    "color": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/home-web.png",
+        "selectedIconPath": "image/onhome-web.png"
+      },
+      {
+        "pagePath": "pages/rent/rent",
+        "text": "租房",
+        "iconPath": "image/rent-web.png",
+        "selectedIconPath": "image/onrent-web.png"
+      },
+      {
+        "pagePath": "pages/resold/resold",
+        "text": "买房",
+        "iconPath": "image/buy-web.png",
+        "selectedIconPath": "image/onbuy-web.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "门店",
+        "iconPath": "image/me-web.png",
+        "selectedIconPath": "image/onme-web.png"
+      }
     ]
   }
 }

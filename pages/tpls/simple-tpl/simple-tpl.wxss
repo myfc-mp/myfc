@@ -1,0 +1,95 @@
+.temple-simple-container{  
+  display:flex;       
+  flex-direction: row; 
+  margin-top: 15rpx;
+  height: 250rpx;
+  background-color: rgb(233,236,239);
+}
+
+.tpl-img-box{
+  width: 230rpx;
+  height:230rpx;
+  margin-left:30rpx;
+  margin-top:12rpx;
+  margin-bottom:12rpx;   
+}
+
+.tpl-img-box image{
+  width:220rpx;
+  height:220rpx;
+}
+
+
+.tpl-description-container{
+  display:flex;
+  flex-direction:column;
+  align-content:flex-end;
+  width:100%;
+  margin-left:30rpx;
+  margin-right:30rpx;
+  margin-top:12rpx;
+  margin-bottom:12rpx; 
+}
+
+.tpl-title{
+  font-size: 30rpx;
+  font-weight: bold;
+  color:rgb(37,40,44);
+  flex:2;
+}
+
+.tpl-detail-container{
+  display:flex;
+  flex-direction:row;
+  font-size:23rpx;  
+  flex:1;
+}
+
+.tpl-name{
+  margin-right: 15rpx;
+}
+
+.tpl-label-container{
+  display:flex;
+  align-items:row;
+  flex:1;
+}
+
+.tpl-label{
+  font-size:25rpx;
+  padding: 0 3px ;
+  border-radius: 5rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  text-align: center;
+}
+
+.tpl-bottom{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex:1;
+  font-size:25rpx;
+}
+
+.tpl-type{
+  margin-right: 10rpx;
+  font-size:28rpx;
+}
+
+.tpl-area{
+  margin-right: 10rpx;
+  font-size:28rpx;
+}
+
+.tpl-price{
+  color: #ff9609;
+  font-size:40rpx;
+  font-weight: bold;
+}
+.tpl-price-unit{
+  margin-left: 10rpx;
+  font-size:28rpx;
+  color: #ff9609;
+}

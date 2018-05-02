@@ -1,0 +1,36 @@
+<!-- 房屋信息显示行样式，可以在各页面通用； -->
+<template name="simple-item">
+<view class = "temple-simple-container">
+  <view class="tpl-img-box">
+    <image src="{{image[0].url}}"></image>
+  </view>
+  <view class="tpl-description-container">
+    <view class="tpl-title">{{title}}</view>
+    <view class="tpl-detail-container">
+      <view class="tpl-name">{{name}}</view>
+      <view class="tpl-location">{{location}}</view>
+    </view>
+    <view class="tpl-label-container">
+      <view wx:for="{{label_name}}" wx:for-item="it">
+        <view class="tpl-label" style="background-color:{{backColor[label[index].label_id]}};color:{{fontColor[label[index].label_id]}}">
+         {{it.description}}
+        </view>
+      </view> 
+    </view>
+    <view class="tpl-bottom">
+      <view>
+        <text class="tpl-type">{{type}}</text>
+        <text class="tpl-area">{{area}}m²</text>
+      </view>
+      <view wx:if="{{id < 100000}}">
+        <text class="tpl-price">{{price_total}}</text>
+        <text class="tpl-price-unit">万</text>
+      </view>   
+      <view wx:else>
+        <text class="tpl-price">{{rental}}</text>
+        <text class="tpl-price-unit">元/月</text>
+      </view>    
+    </view>
+  </view>
+</view>
+</template>

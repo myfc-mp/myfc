@@ -1,13 +1,24 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-       </block>   
+<!-- 引入房屋信息显示模板 -->
+<import src="../tpls/simple-tpl/simple-tpl.wxml" />   
+
+<view class="frame">
+  <view class="swiperBox">
+    <swiper indicator-dots='true' autoplay='true' class='swiper'>
+      <block wx:for='{{bannerArr}}'>
+        <swiper-item class='banner-item'>
+          <image src='{{item.url}}'></image>
+        </swiper-item>
+      </block>    
+    </swiper> 
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class="title">-封推房源-</view>
+
+  <view class="tpl-line-box" wx:for="{{recommendArr}}" wx:for-item="item">
+    
+      <template is = "simple-item" data="{{...item,backColor,fontColor}}"/>     
+
+    
+
   </view>
-</view>
+</view> 
