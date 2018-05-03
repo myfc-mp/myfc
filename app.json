@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/store/store",
     "pages/resold/resold",
-    "pages/rent/rent"
+    "pages/rent/rent",
+    "pages/resoldhouse/resoldhouse",
+    "pages/renthouse/renthouse"
   ],
   "window": {
     "backgroundTextStyle": "light",

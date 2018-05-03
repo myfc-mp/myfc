@@ -12,13 +12,13 @@
     </swiper> 
   </view>
 
-  <view class="title">-封推房源-</view>
+  <view class="title">- 封推房源 -</view>
+ 
+     <view class="tpl-line-box" wx:for="{{recommendArr}}" wx:for-item="item">
+     
+        <template is = "simple-item" data="{{...item}}"/>            
 
-  <view class="tpl-line-box" wx:for="{{recommendArr}}" wx:for-item="item">
-    
-      <template is = "simple-item" data="{{...item,backColor,fontColor}}"/>     
+     </view>   
 
-    
 
-  </view>
 </view> 

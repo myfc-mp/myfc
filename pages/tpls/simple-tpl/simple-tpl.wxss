@@ -1,9 +1,11 @@
 .temple-simple-container{  
   display:flex;       
   flex-direction: row; 
-  margin-top: 15rpx;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
   height: 250rpx;
-  background-color: rgb(233,236,239);
+  background-color: white;
+  border-bottom: 1rpx solid #f5f5f5; 
 }
 
 .tpl-img-box{
@@ -19,6 +21,11 @@
   height:220rpx;
 }
 
+.recommendLabel{
+  position: absolute;
+
+  left:550rpx;
+}
 
 .tpl-description-container{
   display:flex;
@@ -41,12 +48,18 @@
 .tpl-detail-container{
   display:flex;
   flex-direction:row;
-  font-size:23rpx;  
+  font-size:25rpx;  
+  align-items: center;
   flex:1;
+  padding-bottom: 15rpx;
 }
 
 .tpl-name{
   margin-right: 15rpx;
+  border-radius: 7rpx;
+  background-color: green;
+  color: white;
+  padding: 3rpx 5rpx;
 }
 
 .tpl-label-container{
@@ -56,7 +69,7 @@
 }
 
 .tpl-label{
-  font-size:25rpx;
+  font-size:23rpx;
   padding: 0 3px ;
   border-radius: 5rpx;
   margin-right: 10rpx;

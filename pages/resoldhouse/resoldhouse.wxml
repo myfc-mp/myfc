@@ -1,0 +1,42 @@
+<!--pages/house/house.wxml-->
+<view class="frame">
+  <view class="swiperBox">
+    <swiper indicator-dots='true' autoplay='true' class='swiper'>
+      <block wx:for='{{houseArr.image}}'>
+        <swiper-item class='banner-item'>
+          <image src='{{item.url}}'></image>
+        </swiper-item>
+      </block>    
+    </swiper> 
+  </view>
+  <view class="title">
+    <view class="titleName">{{houseArr.title}}</view>
+    <view class="forward">
+      <button open-type='share' plain='true'><image src="../../image/forward.jpg"></image></button>   
+    </view>            
+  </view>
+  <view class="overview">
+    <view class="price">
+      <view class="overview-value">{{houseArr.price_total}}万</view>
+      <view class="overview-describ">售价</view>
+    </view>
+    <view class="division"></view>
+    <view class="type">
+      <view class="overview-value">{{houseArr.type}}</view>
+      <view class="overview-describ">房型</view>
+    </view>
+    <view class="division"></view>
+    <view class="area">
+      <view class="overview-value">{{houseArr.area}}m²</view>
+      <view class="overview-describ">面积</view>
+    </view>
+  </view>  
+  <view class="info">
+  </view>
+  <view class="agency">
+  </view>
+  <view class="detail">
+  </view>
+  <view class="map">
+  </view>
+</view>

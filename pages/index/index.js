@@ -7,65 +7,8 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-    backColor:[
-      '#000000',
-      'RGB(231,247,253)',
-      'RGB(231,247,253)',
-      'RGB(231,247,253)',
-      'RGB(231,247,253)',
-      'RGB(241,253,244)',
-      'RGB(241,253,244)',
-      'RGB(241,253,244)',
-      'RGB(241,253,244)',
-      'RGB(253,241,250)',
-      'RGB(253,241,250)',
-      'RGB(253,241,250)',
-      'RGB(253,241,250)',
-      'RGB(247,250,214)',
-      'RGB(247,250,214)',
-      'RGB(247,250,214)', 
-      'RGB(247,250,214)',
-      'RGB(245,245,245)',
-      'RGB(245,245,245)',
-      'RGB(250,234,230)',
-      'RGB(250,234,230)',
-      'RGB(232,230,242)',
-      'RGB(232,230,242)',
-      'RGB(232,230,242)',
-      'RGB(232,230,242)',
-      'RGB(245,245,245)',
-      'RGB(245,245,245)'
-    ], 
-    fontColor: [
-      '#000000',
-      'RGB(108,160,205)',
-      'RGB(108,160,205)',
-      'RGB(108,160,205)',
-      'RGB(108,160,205)',
-      'RGB(95,206,145)',
-      'RGB(95,206,145)',
-      'RGB(95,206,145)',
-      'RGB(95,206,145)',
-      'RGB(241,158,101)',
-      'RGB(241,158,101)',
-      'RGB(241,158,101)',
-      'RGB(241,158,101)',
-      'RGB(191,144,0)',
-      'RGB(191,144,0)',
-      'RGB(191,144,0)',
-      'RGB(191,144,0)',
-      'RGB(59,56,56)',
-      'RGB(59,56,56)',
-      'RGB(197,90,17)',
-      'RGB(197,90,17)',
-      'RGB(198,165,215)',
-      'RGB(198,165,215)',
-      'RGB(198,165,215)',
-      'RGB(198,165,215)',
-      'RGB(59,56,56)',
-      'RGB(59,56,56)'
-    ]
+  data: {    
+    
   },
 
   /**
@@ -86,29 +29,45 @@ Page({
     });
 
     data = index.getRecommendData((res) => {
-      for (let i in res) {
-        if(res[i]){
-          for (let j in res[i].image){
-            res[i].image[j].url = Config.house_prefix + res[i].image[j].url;
-          }
+      for (let i in res) {        
+        for (let j in res[i].image){
+          res[i].image[j].url = Config.house_prefix + res[i].image[j].url;             
         }
+        res[i].recommendLabel = Config.recommendLogo_prefix + res[i].recommendLabel;
       }
       this.setData({ 'recommendArr': res });
-      console.log(this.data.recommendArr);
+  
     });
 
     
+  },
+
+  onHouseTap: function (option) {
+    let houseID = option.currentTarget.dataset.id;
+    if (houseID < 100000){
+      wx.navigateTo({
+        'url': '../resoldhouse/resoldhouse?id=' + houseID
+      });
+    }
+    else{
+      wx.navigateTo({
+        'url': '../renthouse/renthouse?id=' + houseID
+      });
+    }
+  },
+  onShareAppMessage: function (res) {
+    console.log(res);
+    return {
+
+      path: '/pages/index/index',
+      imageUrl: Config.recommendLogo_prefix + 'forwardTitle.jpg',
+      success: function (res) {
+        console.log('seccess');
+        // 转发成功
+      },
+      fail: function (res) {
+        console.log('fail');
+      }
+    }
   }
-
-  // onProductsItemTap: function (option) {
-  //   wx.navigateTo({
-  //     'url': '../product/product?id=' + option.currentTarget.dataset.id
-  //   });
-  // },
-
-  // onTheme: function (option) {
-  //   wx.navigateTo({
-  //     'url': '../theme/theme?id=' + option.currentTarget.dataset.id + '&name=' + option.currentTarget.dataset.name
-  //   });
-  // }
 })

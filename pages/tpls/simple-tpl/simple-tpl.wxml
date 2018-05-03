@@ -1,8 +1,9 @@
 <!-- 房屋信息显示行样式，可以在各页面通用； -->
 <template name="simple-item">
-<view class = "temple-simple-container">
+<view class = "temple-simple-container" bindtap='onHouseTap' data-id='{{id}}'>
   <view class="tpl-img-box">
     <image src="{{image[0].url}}"></image>
+    <image class="recommendLabel" src="{{recommendLabel}}"></image>
   </view>
   <view class="tpl-description-container">
     <view class="tpl-title">{{title}}</view>
@@ -12,7 +13,7 @@
     </view>
     <view class="tpl-label-container">
       <view wx:for="{{label_name}}" wx:for-item="it">
-        <view class="tpl-label" style="background-color:{{backColor[label[index].label_id]}};color:{{fontColor[label[index].label_id]}}">
+        <view class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}">
          {{it.description}}
         </view>
       </view> 

@@ -24,6 +24,8 @@
   font-size:14px;
   line-height: 60rpx;
   margin-top:15rpx; 
+  padding-bottom: 10rpx;
+  border-bottom: 4rpx solid #eee;
 }
 
 
