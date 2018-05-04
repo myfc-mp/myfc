@@ -1,0 +1,19 @@
+<template name="store-item">
+  <view class="store-title">
+    <view class="store-description">
+      <view class="store-name">
+        <span class="iconfont icon-store"></span>
+        <span class="iconfont">店名：{{name}}</span>
+      </view>      
+      <view class="store-address">地址：{{address}}</view>
+    </view>
+
+    <view class="store-phone" bindtap="onCallTap" data-number="{{phone}}">
+      <image src="../../image/call.jpg"></image>
+    </view>
+  </view>
+  <view>
+    <map id="{{index}}" style="width: 100%; height: 300px;" latitude="{{lat}}" longitude="{{lng}}" markers="{{markers}}" show-location></map>
+  </view>
+
+</template>

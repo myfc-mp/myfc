@@ -8,7 +8,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+
   },
 
   /**
@@ -29,8 +29,20 @@ Page({
       }
       res.agency.avatar.url = Config.avatar_prefix + res.agency.avatar.url;
       this.setData({ 'houseArr': res });
-      
-    });
+      wx.setNavigationBarTitle({
+        title: this.data.houseArr.name,
+      });
+      this.setData({
+        'latitude': res.lat,
+        'longitude': res.lng,
+        'markers':[{
+          id: 1,
+          latitude: res.lat,
+          longitude: res.lng,
+        }]
+      });
+      this.mapCtx = wx.createMapContext('myMap')
+    });    
   },
 
   onShareAppMessage:function(res){
@@ -46,5 +58,14 @@ Page({
         console.log('fail');
       }
     }
+  },
+
+  onCallTap: function () {
+    wx.makePhoneCall({
+      phoneNumber: this.data.houseArr.agency.phone,
+      success: function () {
+        console.log("成功拨打电话")
+      }
+    })
   }
 })

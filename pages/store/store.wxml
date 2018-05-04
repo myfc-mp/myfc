@@ -1,2 +1,8 @@
-<!--pages/store/store.wxml-->
-<text>pages/store/store.wxml</text>
+<import src="../tpls/store-tpl/store-tpl.wxml" />  
+
+<view class = frame>
+  
+  <view class="store-item-container" wx:for="{{storeArr}}" wx:for-item="item">
+    <template is = "store-item" data="{{...item}}"/>  
+  </view>
+</view>

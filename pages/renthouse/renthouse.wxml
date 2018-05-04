@@ -32,11 +32,66 @@
     </view>
   </view>  
   <view class="info">
+    <view class="info-left">
+      <view>区域：{{houseArr.location}}</view>
+      <view>单价：{{houseArr.price_unit}}m²</view>
+      <view>类型：{{houseArr.type}}</view>
+    </view>
+    <view class="info-right">
+      <view>年代：{{houseArr.age}}</view>
+      <view>装修：{{houseArr.decoration}}</view>
+      <view>楼层：{{houseArr.floor}}</view>
+    </view>
   </view>
   <view class="agency">
+    <view class="avatar">
+      <image src="{{houseArr.agency.avatar.url}}"></image>
+    </view>
+    <view class="agency-info">
+      <view>{{houseArr.agency.name}}</view>
+      <view>{{houseArr.agency.phone}}</view>
+    </view>
+    <view class="agency-call">
+      <view bindtap="onCallTap" ><image src="../../image/call.jpg"></image></view>
+    </view>
   </view>
   <view class="detail">
+    <view class="detail-title">房源概况</view>
+    <view class="detail-label">
+      <view wx:for="{{houseArr.label_name}}" wx:for-item="it">
+        <view class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}">
+         {{it.description}}
+        </view>
+      </view> 
+    </view>
+    <view class="competance">
+      <view class="competance-title">
+        <view class="iconfont icon-competence"></view>
+        <view class="competance-title-text">核心卖点</view>
+      </view>
+      <view>{{houseArr.competence}}</view>
+    </view>
+    <view class="around">
+      <view class="around-title">
+        <view class="iconfont icon-around"></view>
+        <view class="competance-title-text">周边配套</view>
+      </view>
+      <view>{{houseArr.around}}</view>
+    </view>
   </view>
   <view class="map">
+  <view class="competance-title">
+    <view class="iconfont icon-location"></view>
+    <view class="competance-title-text">地理位置</view>
+  </view>
+  
+  <map
+      id="myMap"
+      style="width: 100%; height: 300px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      show-location
+    ></map>
   </view>
 </view>

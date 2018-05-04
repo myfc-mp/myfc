@@ -1,4 +1,6 @@
-// pages/store/store.js
+import { Store } from 'store-model.js';
+
+var store = new Store();
 Page({
 
   /**
@@ -12,9 +14,30 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this._loadData();
   },
+  _loadData: function () {
+    let data = store.getStoreData((res) => {
+      for(let i in res){
+        res[i].markers = [{
+          id: 1+i,
+          latitude: res[i].lat,
+          longitude: res[i].lng,
+        }];
+      }
+      this.setData({ 'storeArr': res });
 
+      // this.mapCtx = wx.createMapContext('myMap');
+    });
+  },
+  onCallTap: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: e.currentTarget.dataset.number,
+      success: function () {
+        console.log("成功拨打电话")
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

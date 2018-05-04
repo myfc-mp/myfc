@@ -1,0 +1,43 @@
+.store-title{
+  display: flex;
+  align-items: center;
+}
+
+.store-description{
+  height: 120rpx;
+  width: 570rpx;
+  
+}
+
+.store-phone{
+  height: 120rpx;
+  width: 120rpx;
+}
+
+.store-name{
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.store-address{
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: RGB(92,88,88);
+  margin-left: 29rpx;
+}
+
+.store-phone image{
+  height: 100%;
+  width: 100%;
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:30rpx;
+  font-style:normal;
+  color: green;
+ 
+}
+
+.icon-store:before { content: "\e095"; }

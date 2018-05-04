@@ -13,7 +13,7 @@
     </view>
     <view class="tpl-label-container">
       <view wx:for="{{label_name}}" wx:for-item="it">
-        <view class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}">
+        <view wx:if="{{index < 3}}" class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}">
          {{it.description}}
         </view>
       </view> 
