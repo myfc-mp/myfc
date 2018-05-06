@@ -1,6 +1,6 @@
 
 import { Index } from 'index-model.js';
-import { Config } from '../../utils/config.js';
+
 var index = new Index();
 Page({
 
@@ -21,20 +21,13 @@ Page({
   _loadData: function () {
 
     var data = index.getBannerData((res) =>{
-      for (let i in res) {
-        res[i].url = Config.carousel_prefix + res[i].url;
-      }
+
       this.setData({ 'bannerArr': res });
    
     });
 
     data = index.getRecommendData((res) => {
-      for (let i in res) {        
-        for (let j in res[i].image){
-          res[i].image[j].url = Config.house_prefix + res[i].image[j].url;             
-        }
-        res[i].recommendLabel = Config.recommendLogo_prefix + res[i].recommendLabel;
-      }
+ 
       this.setData({ 'recommendArr': res });
   
     });

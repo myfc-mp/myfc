@@ -1,1 +1,80 @@
 <!--pages/resold/resold.wxml-->
+<import src="../tpls/simple-tpl/simple-tpl.wxml" />  
+
+<view class="frame">
+  <view class="selectZone">
+    <view class="selectTitle" bindtap='onSelectTap' data-index='0'><view>区域</view><view class="arrow"></view></view>
+    <view class="selectTitle" bindtap='onSelectTap' data-index='1'><view>总价</view><view class="arrow"></view></view>
+    <view class="selectTitle" bindtap='onSelectTap' data-index='2'><view>户型</view><view class="arrow"></view></view>
+    <view class="selectTitle" bindtap='onSelectTap' data-index='3'><view>面积</view><view class="arrow"></view></view>
+  </view>
+  <view style='display:{{display[0]}}' class="selectDetaile">
+    <scroll-view scroll-y style="height: 600rpx;" >
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='不限'>不限</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='锦江区'>锦江区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='青羊区'>青羊区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='武侯区'>武侯区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='高新南区'>高新南区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='高新西区'>高新西区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='成华区'>成华区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='金牛区'>金牛区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='郫都区'>郫都区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='天府新区'>天府新区</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='双流'>双流</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='温江'>温江</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='龙泉驿'>龙泉驿</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='新都'>新都</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='青白江'>青白江</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='金堂'>金堂</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='大邑'>大邑</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='浦江'>浦江</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='新津'>新津</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='彭州'>彭州</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='邛崃'>邛崃</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='崇州'>崇州</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='都江堰'>都江堰</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='简阳'>简阳</view>
+    <view class="scroll-view-item" bindtap='onLocationTap' data-location='仁寿'>仁寿</view>
+  </scroll-view>
+  </view>
+  <view style='display:{{display[1]}}' class="selectDetaile">
+  <scroll-view scroll-y style="height: 650rpx;">
+    <view class="scroll-view-item" bindtap='onPriceTap' data-price='不限'>不限</view>
+    <view class="scroll-view-item" bindtap='onPriceTap' data-price='60万以下'>60万以下</view>
+    <view class="scroll-view-item" bindtap='onPriceTap' data-price='60-100万'>60-100万</view>
+    <view class="scroll-view-item" bindtap='onPriceTap' data-price='100-150万'>100-150万</view>
+    <view class="scroll-view-item" bindtap='onPriceTap' data-price='150-200万'>150-200万</view>
+    <view class="scroll-view-item" bindtap='onPriceTap' data-price='200-300万'>200-300万</view>
+    <view class="scroll-view-item" bindtap='onPriceTap' data-price='300万以上'>300万以上</view>
+  </scroll-view>
+  </view>
+  <view style='display:{{display[2]}}' class="selectDetaile">
+  <scroll-view scroll-y style="height: 600rpx;">
+    <view class="scroll-view-item" bindtap='onTypeTap' data-type='不限' >不限</view>
+    <view class="scroll-view-item" bindtap='onTypeTap' data-type='一室' >一室</view>
+    <view class="scroll-view-item" bindtap='onTypeTap' data-type='二室' >二室</view>
+    <view class="scroll-view-item" bindtap='onTypeTap' data-type='三室' >三室</view>
+    <view class="scroll-view-item" bindtap='onTypeTap' data-type='四室' >四室</view>
+    <view class="scroll-view-item" bindtap='onTypeTap' data-type='五室及以上' >五室及以上</view>
+  
+  </scroll-view>
+  </view>
+  <view style='display:{{display[3]}}' class="selectDetaile">
+  <scroll-view scroll-y style="height: 600rpx;">
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='不限'>不限</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='0-50m²'>0-50m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='50-70m²'>50-70m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='70-90m²'>70-90m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='90-110m²'>90-110m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='110-130m²'>110-130m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='130-150m²'>130-150m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='150-200m²'>150-200m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='200-300m²'>200-300m²</view>
+    <view class="scroll-view-item" bindtap='onAreaTap' data-area='300m²以上'>300m²以上</view>
+  </scroll-view>
+  </view>
+
+  <view class="tpl-line-box" wx:for="{{resoldArr}}" wx:for-item="item">     
+        <template is = "simple-item" data="{{...item}}"/>           
+  </view>   
+</view>

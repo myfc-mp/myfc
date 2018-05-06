@@ -9,6 +9,7 @@ class Base {
     if (!params.type) {
       params.type = 'GET';
     }
+    console.log(params.data);
     wx.request({
       url: this.baseUrl + params.url,
       // header: {
