@@ -14,11 +14,11 @@
 
   <view class="title">- 封推房源 -</view>
  
-     <view class="tpl-line-box" wx:for="{{recommendArr}}" wx:for-item="item">
-     
-        <template is = "simple-item" data="{{...item}}"/>            
+  <view class="tpl-line-box" wx:for="{{recommendArr}}" wx:for-item="item">
+  
+    <template is = "simple-item" data="{{...item}}"/>            
 
-     </view>   
-
+  </view>   
+  <view class="footer">龙吟昊天科技有限公司提供技术支持，微信号：lxb365</view>
 
 </view> 

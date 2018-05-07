@@ -9,8 +9,8 @@ class Resold extends Base {
 
   getAllResoldData(attr, callback) {
     let params = {
-      // 'url': '?s=/api/Get_selected_house/getResoldHouse',
-      'url': 'index/addHouse?XDEBUG_SESSION_START=12880',
+      'url': '?s=/api/Get_selected_house/getResoldHouse',
+      // 'url': 'index/addHouse?XDEBUG_SESSION_START=12880',
       'type': 'POST',
       //这里是收到服务器消息后，回调sCallBack，在sCallBack里面再次回调的地方
       //第二次回调的是真正处理数据的函数

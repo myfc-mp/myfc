@@ -41,7 +41,8 @@
 .tpl-title{
   font-size: 30rpx;
   font-weight: bold;
-  color:rgb(37,40,44);
+  /* color:rgb(37,40,44); */
+  color:#555;
   flex:2;
 }
 

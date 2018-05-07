@@ -92,6 +92,20 @@ Page({
     this._loadData();
   },
 
+  onHouseTap: function (option) {
+    let houseID = option.currentTarget.dataset.id;
+    if (houseID < 100000) {
+      wx.navigateTo({
+        'url': '../resoldhouse/resoldhouse?id=' + houseID
+      });
+    }
+    else {
+      wx.navigateTo({
+        'url': '../renthouse/renthouse?id=' + houseID
+      });
+    }
+  },
+  
   onTypeTap: function (e) {
     let data = this.data.attr;
     data.type = e.currentTarget.dataset.type;

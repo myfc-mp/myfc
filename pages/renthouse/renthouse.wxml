@@ -34,13 +34,13 @@
   <view class="info">
     <view class="info-left">
       <view>区域：{{houseArr.location}}</view>
-      <view>单价：{{houseArr.price_unit}}m²</view>
+      <view>出租模式：{{houseArr.mode}}</view>
       <view>类型：{{houseArr.type}}</view>
     </view>
     <view class="info-right">
-      <view>年代：{{houseArr.age}}</view>
-      <view>装修：{{houseArr.decoration}}</view>
       <view>楼层：{{houseArr.floor}}</view>
+      <view>装修：{{houseArr.decoration}}</view>
+      <view></view>
     </view>
   </view>
   <view class="agency">

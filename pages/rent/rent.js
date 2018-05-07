@@ -127,6 +127,20 @@ Page({
     }
   },
 
+  onHouseTap: function (option) {
+    let houseID = option.currentTarget.dataset.id;
+    if (houseID < 100000) {
+      wx.navigateTo({
+        'url': '../resoldhouse/resoldhouse?id=' + houseID
+      });
+    }
+    else {
+      wx.navigateTo({
+        'url': '../renthouse/renthouse?id=' + houseID
+      });
+    }
+  },
+  
   onShowSelectZone: function (index) {
     let data = this.data.display;
     for (let i in data) {

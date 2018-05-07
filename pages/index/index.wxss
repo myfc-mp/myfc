@@ -17,7 +17,7 @@
 
 /* 页首标题行样式 */
 .title {
-  color:#444;
+  color:#555;
   background-color: white;    
   text-align:center;
   font-weight: bold;
@@ -28,7 +28,12 @@
   border-bottom: 4rpx solid #eee;
 }
 
-
+.footer{
+  text-align: center;
+  color: #888;
+  font-size: 25rpx;
+  line-height: 60rpx;
+}
 
 
 

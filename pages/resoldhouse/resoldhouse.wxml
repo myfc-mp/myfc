@@ -34,7 +34,7 @@
   <view class="info">
     <view class="info-left">
       <view>区域：{{houseArr.location}}</view>
-      <view>单价：{{houseArr.price_unit}}m²</view>
+      <view>单价：{{houseArr.price_unit}}元/m²</view>
       <view>类型：{{houseArr.type}}</view>
     </view>
     <view class="info-right">
