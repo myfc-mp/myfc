@@ -4,7 +4,7 @@
     <swiper indicator-dots='true' autoplay='true' class='swiper'>
       <block wx:for='{{houseArr.image}}'>
         <swiper-item class='banner-item'>
-          <image src='{{item.url}}'></image>
+          <image src='{{item.url}}' bindtap='onImageTap' data-list="{{houseArr.image}}" data-src="{{item.url}}"></image>
         </swiper-item>
       </block>    
     </swiper> 
@@ -12,8 +12,13 @@
   <view class="title">
     <view class="titleName">{{houseArr.title}}</view>
     <view class="forward">
-      <button open-type='share' plain='true'><image src="../../image/forward.jpg"></image></button>   
-    </view>            
+      <view>
+        <button open-type='share' plain='true'>
+          <image src="../../image/forward.jpg"></image>
+        </button>
+      </view>
+      <view>转发</view>
+    </view>       
   </view>
   <view class="overview">
     <view class="price">

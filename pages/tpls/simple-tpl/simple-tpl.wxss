@@ -9,6 +9,7 @@
 }
 
 .tpl-img-box{
+  position: relative;
   width: 230rpx;
   height:230rpx;
   margin-left:30rpx;
@@ -23,8 +24,10 @@
 
 .recommendLabel{
   position: absolute;
-  opacity: 0.5;
-  left:550rpx;
+  width: 40rpx;
+  height: 40rpx;
+  left:-55rpx;
+  top:-70rpx;
 }
 
 .tpl-description-container{
@@ -33,7 +36,7 @@
   align-content:flex-end;
   width:100%;
   margin-left:30rpx;
-  margin-right:30rpx;
+  margin-right:15rpx;
   margin-top:12rpx;
   margin-bottom:12rpx; 
 }
@@ -98,12 +101,12 @@
 }
 
 .tpl-price{
-  color: #ff9609;
+  color: #ff9622;
   font-size:40rpx;
   font-weight: bold;
 }
 .tpl-price-unit{
   margin-left: 10rpx;
   font-size:28rpx;
-  color: #ff9609;
+  color: #ff9622;
 }

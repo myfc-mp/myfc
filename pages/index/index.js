@@ -53,7 +53,7 @@ Page({
     return {
       title:'玛雅房屋',
       path: '/pages/index/index',
-      imageUrl: Config.recommendLogo_prefix + 'forwardingTitle.jpg',
+      imageUrl: '/image/forwardTitle.jpg',
       success: function (res) {
         console.log('seccess');
         // 转发成功
