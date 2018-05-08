@@ -146,13 +146,11 @@
 }
 
 .detail-label{
-  display: flex;
   padding: 30rpx;
 }
 
 .tpl-label{
   font-size:25rpx;
-  padding: 0 3px ;
   border-radius: 5rpx;
   margin-right: 10rpx;
   margin-bottom: 10rpx;

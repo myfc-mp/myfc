@@ -58,11 +58,9 @@
   <view class="detail">
     <view class="detail-title">房源概况</view>
     <view class="detail-label">
-      <view wx:for="{{houseArr.label_name}}" wx:for-item="it">
-        <view class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}">
-         {{it.description}}
-        </view>
-      </view> 
+      <span class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}" wx:for="{{houseArr.label_name}}" wx:for-item="it">      
+         {{it.description}}   
+      </span> 
     </view>
     <view class="competance">
       <view class="competance-title">

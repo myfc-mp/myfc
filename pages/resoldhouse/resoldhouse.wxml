@@ -6,14 +6,16 @@
         <swiper-item class='banner-item'>
           <image src='{{item.url}}'></image>
         </swiper-item>
-      </block>    
-    </swiper> 
+      </block>
+    </swiper>
   </view>
   <view class="title">
     <view class="titleName">{{houseArr.title}}</view>
     <view class="forward">
-      <button open-type='share' plain='true'><image src="../../image/forward.jpg"></image></button>   
-    </view>            
+      <button open-type='share' plain='true'>
+        <image src="../../image/forward.jpg"></image>
+      </button>
+    </view>
   </view>
   <view class="overview">
     <view class="price">
@@ -30,7 +32,7 @@
       <view class="overview-value">{{houseArr.area}}m²</view>
       <view class="overview-describ">面积</view>
     </view>
-  </view>  
+  </view>
   <view class="info">
     <view class="info-left">
       <view>区域：{{houseArr.location}}</view>
@@ -52,17 +54,17 @@
       <view>{{houseArr.agency.phone}}</view>
     </view>
     <view class="agency-call">
-      <view bindtap="onCallTap" ><image src="../../image/call.jpg"></image></view>
+      <view bindtap="onCallTap">
+        <image src="../../image/call.jpg"></image>
+      </view>
     </view>
   </view>
   <view class="detail">
     <view class="detail-title">房源概况</view>
     <view class="detail-label">
-      <view wx:for="{{houseArr.label_name}}" wx:for-item="it">
-        <view class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}">
-         {{it.description}}
-        </view>
-      </view> 
+      <span class="tpl-label" style="background-color:{{it.back_color}};color:{{it.font_color}}" wx:for="{{houseArr.label_name}}" wx:for-item="it">
+        {{it.description}}
+      </span>
     </view>
     <view class="competance">
       <view class="competance-title">
@@ -80,18 +82,11 @@
     </view>
   </view>
   <view class="map">
-  <view class="competance-title">
-    <view class="iconfont icon-location"></view>
-    <view class="competance-title-text">地理位置</view>
-  </view>
-  
-  <map
-      id="myMap"
-      style="width: 100%; height: 300px;"
-      latitude="{{latitude}}"
-      longitude="{{longitude}}"
-      markers="{{markers}}"
-      show-location
-    ></map>
+    <view class="competance-title">
+      <view class="iconfont icon-location"></view>
+      <view class="competance-title-text">地理位置</view>
+    </view>
+
+    <map id="myMap" style="width: 100%; height: 300px;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location></map>
   </view>
 </view>
