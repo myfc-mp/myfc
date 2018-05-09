@@ -15,6 +15,7 @@
   font-size: 30rpx;
   background-color:white;
   padding: 20rpx 0;
+  z-index: 99;
 }
 .innerZone{
   display: flex;
@@ -39,6 +40,7 @@
   color: RGB(92,88,88);
   font-size: 30rpx;
   padding: 0 30rpx;
+  background-color:white;
 }
 
 .selectDetaile view{
@@ -59,4 +61,15 @@
 .header view{
   flex:1;
   padding:0 30rpx;
+}
+
+.nodata{
+  height:150rpx;
+  text-align: center;
+  margin-top: 80rpx;
+}
+
+.nodata image{
+  height:150rpx;
+  width: 150rpx;
 }

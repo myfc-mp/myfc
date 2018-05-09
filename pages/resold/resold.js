@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    'nodataflag':'none',
     'display':[
       'none',
       'none',
@@ -36,6 +36,12 @@ Page({
     let data = resold.getAllResoldData(this.data.attr,(res) => {
 
       this.setData({ 'resoldArr': res });     
+      if(this.data.resoldArr.length == 0){
+        this.setData({ 'nodataflag': 'block' });
+      }
+      else{
+        this.setData({ 'nodataflag': 'none' });
+      }
     });
   },
 

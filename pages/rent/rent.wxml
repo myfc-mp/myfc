@@ -28,9 +28,7 @@
     <view>{{attr.type}}</view>
     <view>{{attr.area}}</view>
   </view>
-</view>
 
-<view class="frame">
   <view style='display:{{display[0]}}' class="selectDetaile">
     <scroll-view scroll-y style="height: 600rpx;">
       <view class="scroll-view-item" bindtap='onLocationTap' data-location='不限'>不限</view>
@@ -85,6 +83,8 @@
 
     </scroll-view>
   </view>
+
+
   <view style='display:{{display[3]}}' class="selectDetaile">
     <scroll-view scroll-y style="height: 600rpx;">
       <view class="scroll-view-item" bindtap='onAreaTap' data-area='不限'>不限</view>
@@ -99,8 +99,13 @@
       <view class="scroll-view-item" bindtap='onAreaTap' data-area='300m²以上'>300m²以上</view>
     </scroll-view>
   </view>
-
+</view>
+<view class="frame">
   <view class="tpl-line-box" wx:for="{{rentArr}}" wx:for-item="item">
     <template is="simple-item" data="{{...item}}" />
+  </view>
+
+  <view class="nodata" style='display:{{nodataflag}}'>
+    <image src='/image/no-data.png'></image>
   </view>
 </view>

@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    'nodataflag': 'none',
     'display': [
       'none',
       'none',
@@ -36,6 +36,12 @@ Page({
     let data = rent.getAllRentData(this.data.attr, (res) => {
 
       this.setData({ 'rentArr': res });
+      if (this.data.rentArr.length == 0) {
+        this.setData({ 'nodataflag': 'block' });
+      }
+      else {
+        this.setData({ 'nodataflag': 'none' });
+      }
     });
   },
 
